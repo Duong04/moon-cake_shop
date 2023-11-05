@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-color: #c1322f;
+    --cream-color: #faf5e1;
+    --white-color: #fff;
+    --black-color: #000;
+    --yellow-color: #f7a825;
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes animationImg {
+    0% {
+        right: 0;
+    }
+    25% {
+        right: 30px;
+    }
+    50% {
+        right: 60px;
+    }
+    75% {
+        right: 30px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+.banner {
+    width: 100%;
+    height: 445px;
+    background-image: url('../img/banner/breadcrumbs-bg.png');
+    background-size: cover;
+    background-position: 30% center;
+}
+
+.banner-content {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+}
+
+.link a {
+    font-family: 'Inclusive Sans', sans-serif;
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+.link a:hover {
+    color: var(--yellow-color);
+}
+
+.link span {
+    font-weight: 900;
+    color: var(--yellow-color);
+}
+
+.main> section {
+    margin: 40px 0 100px;
+}
+
+.video{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-top: 100px
+}
+.video img{
+    width: 80%;
+}
+.conten1{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+.conten1-0{
+    width: 80%;
+    margin: auto;
+}
+.conten1-0 h2{
+    font-size: 40px;
+}
+.conten1-0 p{
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+.conten2{
+    width: 100%;
+}
+.conten2-0{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 90px 0;
+}
+.logo-img-1{
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    border-left: 1px dashed white;
+    background-color: #C1322F;
+    padding: 90px 0;
+}
+.logo-img-1 img{
+    width: 130px;
+    height: 130px;
+}
+.boder{
+    border-radius: 10px 0 0 10px;
+}
+.boder-1{
+    border-radius: 0 10px 10px 0;
+}
+.conten3{
+    width: 100%;
+    text-align: center;
+}
+.conten3 h2{
+    font-size: 50px;
+    font-weight: 300;
+}
+.conten3 p{
+    margin-top: 10px;
+}
+.conten4{
+    width: 100%;
+}
+.conten4-0{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+.conten4-1{
+    width: 30%;
+    height: 350px;
+    margin: auto;
+    margin-top: 30px;
+    overflow: hidden; 
+    position: relative  
+}
+.conten4-1 img{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease; 
+
+}
+.conten4-1 img:hover{
+    transform: scale(1.1);
+}
+

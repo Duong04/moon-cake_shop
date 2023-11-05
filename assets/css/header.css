@@ -1,0 +1,226 @@
+.header-top {
+    width: 100%;
+    height: 50px;
+    background-color: var(--main-color);
+}
+
+.header-text {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-text-left {
+    color: #e0e0e0;
+    font-weight: 650;
+    font-size: 0.9rem;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.header-text-right {
+    width: 30%;
+    height: 100%;
+    color: #e0e0e0;
+    font-weight: 650;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accout,
+.check-oder {
+    cursor: pointer;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.accout {
+    position: relative;
+    text-align: center;
+}
+
+.accout p {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.accout ul{
+    width: 150px;
+    background-color: var(--white-color);
+    position: absolute;
+    transform: translateX(0);
+    top: 20px;
+    list-style: none;
+    padding: 10px 0;
+    border: 0.5px solid #ccc;
+    display: none;
+    animation: opacitySmooth 0.2s ease;
+}
+
+.accout ul::before {
+    content: "";
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: -20px;
+    top: -10px;
+}
+
+.accout ul a {
+    padding: 5px 8px;
+    display: block;
+    color: var(--black-color);
+}
+
+.accout:hover.accout ul{
+    display: block;
+}
+
+.accout ul a:hover {
+    color: var(--yellow-color);
+}
+
+.line {
+    color: var(--yellow-color);
+    font-size: 1.4rem;
+}
+
+.link-phone a {
+    color: #e0e0e0;
+    font-weight: 600;
+    font-size: 0.9rem;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+/* nav */
+nav {
+    width: 1200px;
+    height: 105px;
+    border-bottom: 1px solid #ccc;
+    margin: auto;
+    background-color: var(--white-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 150px;
+    height: 125px;
+    background-color: var(--main-color);
+    border-bottom-right-radius: 50px;
+}
+
+.logo a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 85%;
+}
+
+menu {
+    width: 55%;
+}
+
+menu ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+menu ul a {
+    padding: 20px;
+    display: block;
+    color: #454545;
+    font-weight: 800;
+    font-size: 1.1rem;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+menu li a:hover {
+    background-image: url('../img/logo/menu_shape.png');
+    background-size: cover;
+    background-position: center center;
+    color: var(--white-color);
+}
+
+.search-cart{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.search form {
+    width: 200px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+}
+
+.search input {
+    width: 80%;
+    height: 85%;
+    margin-left: 7px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 18px;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search button {
+    height: 100%;
+    width: 17%;
+    border: none;
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.cart {
+    position: relative;
+}
+
+.cart i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all ease .3s;
+    color: var(--black-color);
+}
+
+.cart i:hover {
+    color: var(--yellow-color);
+}
+
+.cart-item {
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    background-color: var(--yellow-color);
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 650;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

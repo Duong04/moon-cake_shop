@@ -1,0 +1,175 @@
+footer {
+    width: 100%;
+    background-color: var(--main-color);
+}
+
+.section7 {
+    width: 1200px;
+    height: 170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--white-color);
+}
+
+.box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.box-item {
+    width: 80px;
+    height: 80px;
+    background-color: var(--yellow-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgr {
+    width: 65px;
+    height: 65px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.bgr1 {
+    background-image: url('../img/icon/1.png');
+}
+
+.bgr2 {
+    background-image: url('../img/icon/2.png');
+}
+
+.bgr3 {
+    background-image: url('../img/icon/3.png');
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: var(--white-color);
+}
+
+.box-text h3 {
+    font-size: 1.2rem;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.box-text p {
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.section8 {
+    width: 1200px;
+    height: 280px;
+    margin: 50px auto 0;
+    border-bottom: 1px solid var(--white-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.section8 li {
+    list-style: none;
+}
+
+.section8 li:first-child {
+    margin-top: 20px;
+}
+
+.section8 h3 {
+    font-family: 'Inclusive Sans', sans-serif;
+    color: var(--white-color);
+    font-size: 1.3rem;
+}
+
+.info-contact {
+    width: 27%;
+}
+
+.info-contact ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.info-contact li {
+    color: var(--white-color);
+}
+
+.info-contact i {
+    color: var(--yellow-color);
+}
+
+.menu-2 ul ,
+.categories ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.menu-2 a,
+.categories a {
+    color: var(--white-color);
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.menu-2 a:hover,
+.categories a:hover {
+    color: var(--yellow-color);
+}
+
+.form-mail {
+    width: 25%;
+}
+
+.form-mail p {
+    margin-top: 20px;
+    color: var(--white-color);
+}
+
+.form-mail form {
+    margin-top: 20px;
+    width: 100%;
+    height: 47px;
+    background-color: var(--white-color);
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.form-mail input {
+    width: 80%;
+    height: 80%;
+    padding-left: 10px;
+    margin-left: 7px;
+    border: none;
+}
+
+.form-mail button {
+    width: 17%;
+    height: 87%;
+    background-color: var(--yellow-color);
+    color: var(--white-color);
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.form-mail input:focus {
+    outline: none;
+}
+
+.caption {
+    height: 40px;
+    font-size: 0.9rem;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inclusive Sans', sans-serif;
+}

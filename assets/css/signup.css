@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-color: #c1322f;
+    --cream-color: #faf5e1;
+    --white-color: #fff;
+    --black-color: #000;
+    --yellow-color: #f7a825;
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes animationImg {
+    0% {
+        right: 0;
+    }
+    25% {
+        right: 30px;
+    }
+    50% {
+        right: 60px;
+    }
+    75% {
+        right: 30px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+/* banner */
+.banner {
+    width: 100%;
+    height: 445px;
+    background-image: url('../img/banner/breadcrumbs-bg.png');
+    background-size: cover;
+    background-position: 30% center;
+}
+
+.banner-content {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+}
+
+.link a {
+    font-family: 'Inclusive Sans', sans-serif;
+    color: var(--black-color);
+    font-weight: 600;
+}
+
+.link a:hover {
+    color: var(--yellow-color);
+}
+
+.link span {
+    font-weight: 900;
+    color: var(--yellow-color);
+}
+
+/* article */
+article {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 1000px;
+    height: 550px;
+    box-shadow: rgb(0 0 0 / 10%) 1px 1px 5px 5px;
+    border-radius: 15px;
+}
+
+.form h3 {
+    padding-top: 18px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+    font-family: 'Inclusive Sans', sans-serif;
+    text-align: center;
+}
+
+.form form {
+    margin: auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.full-name,
+.email,
+.up-img,
+.psw,
+.confirm-psw {
+    width: 47%;
+    margin-top: 25px;
+}
+
+.form label {
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.form input {
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: none;
+    border: 2px solid #ccc;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.form input:focus {
+    outline: none;
+    border: 2px solid var(--yellow-color);
+}
+
+.form span {
+    color: red;
+    font-weight: 900;
+}
+
+.link-login {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.link-login a {
+    font-family: 'Inclusive Sans', sans-serif;
+    color: var(--yellow-color);
+}
+
+.btn-signup {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn-signup button {
+    width: 20%;
+    height: 45px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    font-family: 'Inclusive Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all ease 0.4s;
+}
+
+.btn-signup button:hover {
+    background-color: var(--yellow-color);
+}

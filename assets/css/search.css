@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --main-color: #c1322f;
+    --cream-color: #faf5e1;
+    --white-color: #fff;
+    --black-color: #000;
+    --yellow-color: #f7a825;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@keyframes animationImg {
+    0% {
+        right: 0;
+    }
+    25% {
+        right: 30px;
+    }
+    50% {
+        right: 60px;
+    }
+    75% {
+        right: 30px;
+    }
+    100% {
+        right: 0px;
+    }
+}
+
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+article {
+    width: 1200px;
+    margin: 50px auto;
+}
+
+article h2 {
+    margin-bottom: 20px;
+}
+
+.tab-pane-child {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane-item {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border: 2px solid #ccc;
+    padding: 0 0 20px;
+}
+
+.tab-img img {
+    width: 100%;
+    height: 250px;
+}
+
+.tab-pane-item h3 {
+    width: 90%;
+    color: var(--black-color);
+    font-family: 'Inclusive Sans', sans-serif;
+    margin: 5px auto;
+}
+
+.price span {
+    color: var(--yellow-color);
+    font-family: 'Inclusive Sans', sans-serif;
+    font-weight: 600;
+}
+
+.tab-pane-item:hover h3 {
+    color: var(--yellow-color);
+}
+
+.tab-pane-item:hover .tab-pane-link{
+    display: block;
+}
+
+.tab-pane-link {
+    position: absolute;
+    top: 220px;
+    transform: translateX(60%);
+    display: none;
+    animation: opacity 0.5s ease;
+}
+
+.tab-pane-link>a {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    transition: all ease 0.5s;
+}
+
+.tab-pane-link>a:hover {
+    background-color: var(--yellow-color);
+}
+
+.tab-pane-link>a, .tab-pane-link>button {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    transition: all ease 0.5s;
+}
+
+.tab-pane-link>a:hover, .tab-pane-link>button:hover {
+    background-color: var(--yellow-color);
+}
+
+.tab-pane-link>button {
+    padding: 12px;
+    border: none;
+}
+
+.product-price {
+    display: flex;
+    justify-content: center;
+    gap: 13px;
+}
+
+.new-price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--yellow-color);
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.old-price {
+    color: var(--black-color);
+    font-size: 1.1rem;
+    font-family: 'Inclusive Sans', sans-serif;
+}
